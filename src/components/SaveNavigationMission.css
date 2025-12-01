@@ -1,0 +1,158 @@
+.nav-hint {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  font-size: 0.85rem;
+  color: #c7fcff;
+  text-align: center;
+}
+
+.nav-key {
+  border: 1px solid #00fff0;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.7rem;
+  color: #00fff0;
+}
+
+.nav-info {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: rgba(255, 224, 99, 0.08);
+  border: 1px solid #ffe063;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #ffeec0;
+  text-align: center;
+}
+
+.nav-routes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-card {
+  background: #111927e6;
+  border: 2px solid #00eaff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  transition: border 0.15s, box-shadow 0.15s, transform 0.08s;
+}
+
+.nav-card:hover {
+  transform: translateY(-1px);
+}
+
+.nav-focused {
+  border-color: #ffe063;
+  box-shadow: 0 0 12px #ffe06355;
+}
+
+.nav-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.nav-title {
+  color: #ffe063;
+  font-size: 0.85rem;
+}
+
+.nav-status {
+  font-size: 0.7rem;
+  color: #9fb7c0;
+}
+
+.nav-status-saved {
+  color: #23ff23;
+}
+
+.nav-status-dirty {
+  color: #ffa34a;
+}
+
+.nav-card-body-row {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.nav-textarea {
+  flex: 1.2;
+  min-height: 90px;
+  resize: vertical;
+
+  border-radius: 8px;
+  border: 1px solid #007c92;
+  background: #0b1b26;
+  color: #c7fcff;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 8px 10px;
+  outline: none;
+  line-height: 1.6;      
+  letter-spacing: 0.03em;
+  box-sizing: border-box; 
+  max-width: 100%;
+}
+
+.nav-textarea:focus {
+  border-color: #00fff0;
+  box-shadow: 0 0 8px #00fff055;
+}
+
+.nav-hint-panel {
+  flex: 1;
+  background: #071621;
+  border-radius: 8px;
+  border: 1px dashed #00eaff;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  color: #9fdfff;
+  white-space: pre-line; 
+}
+
+.nav-hint-title {
+  font-size: 0.78rem;
+  color: #00fff0;
+  margin-bottom: 6px;
+}
+
+.nav-hint-text {
+  font-size: 0.75rem;
+  white-space: pre-line; 
+  line-height: 1.6;      
+}
+
+.nav-toast {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  color: #9fffa0;
+}
+
+.nav-error {
+  border-color: #ff6060;
+  box-shadow: 0 0 12px #ff606088;
+}
+
+.nav-error .nav-textarea {
+  background: #2a1518;
+}
+
+.nav-next-wrap {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-next-wrap .next-mission {
+  margin: 0;
+}
+
+.nav-hint-second {
+  display: inline-block; 
+  margin-top: 8px;   
+}

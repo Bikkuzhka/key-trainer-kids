@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.story-bg {
+  font-family: 'Press Start 2P', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-content {
+  padding: 32px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 880px;
+}
+
+.story-logo {
+  margin-bottom: 18px;
+}
+
+.story-mission-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #00fff0;
+  text-shadow: 0 0 12px #00fff0aa;
+  margin-bottom: 14px;
+  white-space: nowrap;
+}
+
+.story-emoji {
+  font-size: 2.1rem;
+  filter: drop-shadow(0 0 10px #00fff0aa);
+}
+
+.story-lead {
+  font-size: 1rem;
+  color: #ffe063;
+  text-align: center;
+  margin-bottom: 16px;
+  max-width: 660px;
+  line-height: 1.6;
+}
+
+.story-text-block {
+  background: radial-gradient(circle at top left, #10253a 0%, #050e1a 55%, #020713 100%);
+  border-radius: 18px;
+  border: 2px solid #00eaff;
+  box-shadow: 0 0 28px #00eaff44;
+  padding: 18px 22px 16px 24px;
+  max-width: 760px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-text-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 3px;
+  background: linear-gradient(180deg, #00fff0, #ffe063);
+  opacity: 0.85;
+}
+
+.story-text-block::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, transparent 0, transparent 55%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.story-paragraph {
+  position: relative;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #c7fcff;
+  margin: 0 0 10px 0;
+  padding-left: 18px;
+}
+
+.story-paragraph::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-size: 0.6rem;
+  color: #ffe063;
+}
+
+.story-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.story-next-btn {
+  margin-top: 26px;
+  align-self: center;
+  padding: 13px 34px;
+  font-size: 0.95rem;
+  box-shadow: 0 0 22px #ffe06333;
+}
+
+.story-next-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 30px #ffe06366;
+}
