@@ -1,58 +1,96 @@
-## 🚀 Играть онлайн
+# 🌌 Клави-КосмоКвест
 
-Проект доступен здесь: https://bikkuzhka.github.io/key-trainer-kids/
+Игровой тренажёр для детей (и не только), который помогает весело запомнить полезные горячие клавиши для компьютера через космические задания и мини-истории.
 
-# React + TypeScript + Vite
+[🎮 Играть онлайн](https://bikkuzhka.github.io/key-trainer-kids/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Работает прямо в браузере, ничего устанавливать не нужно.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Что это за игра
 
-## Expanding the ESLint configuration
+**Клави-КосмоКвест** — это набор мини-миссий в космическом стиле, где ребёнок шаг за шагом осваивает комбинации клавиш:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `Ctrl/Cmd + C` — копировать  
+- `Ctrl/Cmd + X` — вырезать  
+- `Ctrl/Cmd + V` — вставить  
+- `Ctrl/Cmd + F` — поиск  
+- `Ctrl/Cmd + S` — сохранить  
+- `Ctrl/Cmd + Z` — отменить  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Все сочетания работают **независимо от раскладки клавиатуры** (русская / английская).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Миссии
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Тренировочный полёт**  
+   Виртуальная клавиатура + таймер. Игроку показывают комбо (например, `Ctrl+S`), нужно как можно быстрее нажать его на реальной клавиатуре. За правильные ответы — очки и звуковые эффекты.
+
+2. **Миссия «Галактический Поиск»**  
+   Осваиваем `Ctrl/Cmd + F`, `Ctrl/Cmd + C`, `Ctrl/Cmd + V`.  
+   Среди десятков кодов нужно найти три секретных, скопировать и отправить в штаб.
+
+3. **Миссия «Астероидный Архиватор»**  
+   Практика `Ctrl/Cmd + A`, `Ctrl/Cmd + X`, `Ctrl/Cmd + V`.  
+   Из «пакетов данных» вырезаем содержимое и переносим его в космический архив.
+
+4. **Миссия «Сохранить навигацию»**  
+   Осваиваем `Ctrl/Cmd + S` и `Ctrl/Cmd + Z`.  
+   Нужно исправить маршруты по образцу, сохранить их и пережить «космическую бурю», которая ломает один маршрут — его придётся восстановить.
+
+5. **Финальная миссия «Шифр Спасения Вселенной»**  
+   Собираем всё вместе: поиск, копирование, вырезание, вставка, сохранение, отмена.  
+   В закодированном сигнале спрятаны три ключевых кода, от них зависит спасение галактики.
+
+---
+
+## 🎮 Управление
+
+Основные сочетания, которые тренируются в квесте:
+
+| Комбинация        | Что делает в игре                     |
+|-------------------|----------------------------------------|
+| `Ctrl/Cmd + F`    | Поиск нужного слова/кода              |
+| `Ctrl/Cmd + C`    | Копировать выделенный код             |
+| `Ctrl/Cmd + X`    | Вырезать данные из пакета             |
+| `Ctrl/Cmd + V`    | Вставить код в нужное поле/слот       |
+| `Ctrl/Cmd + S`    | Сохранить маршрут или финальный код   |
+| `Ctrl/Cmd + Z`    | Отменить действие / восстановить путь |
+
+---
+
+## 🧩 Для кого
+
+- детям, которые только осваивают компьютер;
+- родителям и учителям, которые хотят объяснить горячие клавиши через игру;
+- всем, кто любит пиксельные космо-приключения.
+
+---
+
+## 🛠 Технологии
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [react-simple-keyboard](https://hodgef.com/react-simple-keyboard/) — виртуальная клавиатура
+- [Mousetrap](https://craig.is/killing/mice) — обработка комбо
+- GitHub Pages для деплоя
+
+---
+
+## 🔧 Локальный запуск
+
+Если хочется запустить проект у себя (или поковырять код):
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/bikbuzhka/key-trainer-kids.git
+cd key-trainer-kids
+
+# 2. Установить зависимости
+npm install
+
+# 3. Запустить в режиме разработки
+npm run dev
